@@ -79,7 +79,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     @IBAction func goodJobButtonTapped(sender: UIButton) {
-        filePath = NSBundle.mainBundle().pathForResource("Portal_Good_Job", ofType: "mp3")!
+        filePath = NSBundle.mainBundle().pathForResource("Portal_Good Job", ofType: "mp3")!
         player = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: filePath), error: nil)
         player?.delegate = self
         self.player?.play()
