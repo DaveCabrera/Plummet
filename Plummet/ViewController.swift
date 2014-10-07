@@ -32,13 +32,9 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
                 let currentZ: Double = data.acceleration.z
                 
                 var totalAcceleration: Double = sqrt(pow(currentX, 2) + pow(currentY, 2) + pow(currentZ, 2))
-                print(totalAcceleration)
                 var threshold: Double = 0.06
                 
                 if (totalAcceleration < threshold && self.player?.playing != true){
-                    print("Free fall! \n")
-                    print("Total Acceleration: \(totalAcceleration) \n")
-                    print("Y value: \(currentY) \n")
                     self.player?.play()
                 }
             })

@@ -16,32 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Drop Sound" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wms-pq-ME3">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="28" width="368" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on A Sound to Play A Preview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54f-W1-dS5">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="57" width="368" height="35"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNI-5i-QH3">
                                 <rect key="frame" x="306" y="204" width="111" height="30"/>
-                                <state key="normal" title="Slow Clap">
+                                <state key="normal" backgroundImage="slowClap">
                                     <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="197" y="99" width="203" height="95"/>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="204" y="126" width="180" height="30"/>
+                                    <rect key="frame" x="199" y="126" width="201" height="95"/>
                                 </variation>
                                 <connections>
                                     <action selector="slowClapButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vtt-cI-bln"/>
@@ -49,12 +34,15 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yV6-cE-isC">
                                 <rect key="frame" x="187" y="242" width="111" height="30"/>
-                                <state key="normal" title="Simpsons">
+                                <state key="normal" backgroundImage="simpsons">
                                     <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="194" width="198" height="95"/>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="164" width="180" height="30"/>
+                                    <rect key="frame" x="0.0" y="221" width="202" height="95"/>
                                 </variation>
                                 <connections>
                                     <action selector="simpsonsButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yMR-XF-TZp"/>
@@ -62,62 +50,97 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owy-jh-ASF">
                                 <rect key="frame" x="306" y="242" width="111" height="30"/>
-                                <state key="normal" title="Breaking It">
+                                <state key="normal" backgroundImage="breakingIt">
                                     <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="197" y="194" width="203" height="95"/>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="204" y="164" width="180" height="30"/>
+                                    <rect key="frame" x="202" y="221" width="198" height="95"/>
                                 </variation>
                                 <connections>
                                     <action selector="breakingItButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Lch-jU-KQq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcj-Yz-8BJ">
-                                <rect key="frame" x="245" y="285" width="111" height="30"/>
-                                <state key="normal" title="Good Job">
-                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="207" width="368" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="goodJobButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Amf-BS-tAn"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g71-Nz-bGA">
                                 <rect key="frame" x="198" y="204" width="89" height="30"/>
-                                <state key="normal" title="Duke Nukem">
+                                <state key="normal" backgroundImage="dukeNukem">
                                     <color key="titleColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="100" width="198" height="94"/>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="126" width="169" height="30"/>
+                                    <rect key="frame" x="0.0" y="126" width="202" height="95"/>
                                 </variation>
                                 <connections>
                                     <action selector="dukeNukemButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OMF-vM-gvh"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Sound" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SL-FF-yd9">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcj-Yz-8BJ">
+                                <rect key="frame" x="245" y="285" width="111" height="30"/>
+                                <state key="normal" backgroundImage="goodJob">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="288" width="400" height="111"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="316" width="400" height="117"/>
+                                </variation>
+                                <connections>
+                                    <action selector="goodJobButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Amf-BS-tAn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081399917603" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9SL-FF-yd9" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="28" id="L69-ow-qhU"/>
+                            <constraint firstItem="9SL-FF-yd9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="OyO-uE-PqP"/>
+                            <constraint firstAttribute="trailing" secondItem="9SL-FF-yd9" secondAttribute="trailing" id="lfG-rF-3h5"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="wms-pq-ME3"/>
-                                <exclude reference="54f-W1-dS5"/>
+                                <exclude reference="9SL-FF-yd9"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="L69-ow-qhU"/>
+                                <exclude reference="OyO-uE-PqP"/>
+                                <exclude reference="lfG-rF-3h5"/>
                             </mask>
                         </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
+                        <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="wms-pq-ME3"/>
-                                <include reference="54f-W1-dS5"/>
+                                <include reference="9SL-FF-yd9"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="L69-ow-qhU"/>
+                                <include reference="OyO-uE-PqP"/>
+                                <include reference="lfG-rF-3h5"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="459" y="298.5"/>
+            <point key="canvasLocation" x="481.5" y="282"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="breakingIt" width="1920" height="1200"/>
+        <image name="dukeNukem" width="882" height="496"/>
+        <image name="goodJob" width="1920" height="1080"/>
+        <image name="simpsons" width="630" height="420"/>
+        <image name="slowClap" width="1000" height="487"/>
+    </resources>
 </document>
